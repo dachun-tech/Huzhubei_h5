@@ -1,0 +1,192 @@
+/* here you can put your own css to customize and override the theme */
+/*
+  global common css
+
+*/
+
+div, label, a, span, p,
+h1, h2, h3, h4, h5, h6,
+button, td, th, tr {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+
+
+.right-floated {
+    float: right;
+}
+
+.left-floated {
+    float: left;
+}
+
+.right-aligned {
+    text-align: right;
+    display: inline-block;
+}
+
+.center-aligned {
+    text-align: center;
+    display: inline-block;
+}
+
+.left-aligned {
+    text-align: left;
+    display: inline-block;
+}
+
+.page-header.navbar {
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+.page-wrapper {
+    background-color: white;
+}
+
+.page-header-fixed .page-container {
+    margin-left: 30px;
+}
+
+.page-sidebar {
+    background-color: transparent;
+    width: 150px !important;
+}
+
+.page-sidebar .page-sidebar-menu > li,
+.page-sidebar-closed.page-sidebar-fixed
+.page-sidebar:hover .page-sidebar-menu > li {
+    margin: 10px 0;
+}
+
+.page-sidebar-closed.page-sidebar-fixed
+.page-sidebar:hover .page-sidebar-menu > li > a,
+.page-sidebar .page-sidebar-menu > li > a {
+    border-radius: 5px;
+    border: 1px solid grey;
+    background: white;
+    padding: 2px 0;
+    margin: 0;
+    text-align: center;
+}
+
+.page-content-wrapper .page-content {
+    margin-left: 150px;
+    padding-top: 0 !important;
+    background:white;
+}
+
+.menu-selected {
+    background: #ffff00 !important;
+}
+
+.menu-title {
+    background: #009965 !important;
+    border: 1px solid #009965 !important;
+    color: white !important;
+    padding: 5px 10px !important;
+    font-size: 12pt !important;
+    text-align: left !important;
+}
+
+.menu-title i {
+    color: white !important;
+}
+
+.portlet-body div {
+    text-align: center;
+}
+
+.portlet-body table thead tr th {
+    background: #009965;
+    color: white;
+}
+
+.portlet-body table thead tr th,
+.portlet-body table tbody tr td {
+    margin: 0 !important;
+    padding: 10px 0 !important;
+    vertical-align: middle !important;
+}
+
+.input-small {
+    width: calc(8vw) !important;
+}
+
+.navbar-nav > li > a {
+    padding-bottom: 14px;
+}
+
+.page-header.navbar
+.top-menu .navbar-nav >
+li.dropdown >
+.dropdown-toggle:last-child {
+    padding-right: 5px;
+}
+
+.page-title-string{
+    position: relative;
+    min-height:50px;
+    line-height: 50px;
+    transform:translateY(-50%);
+    top:25px;
+    font-size: 28px;
+    font-weight:600;
+    float: left;
+}
+
+.pagination-num{
+    padding: 0 10px;
+}
+
+.form-group div .img_preview{
+    position: relative;
+    display:inline-block;
+    background-size:100% 100%!important;
+    width:100px;
+    height:35px;
+    vertical-align: middle;
+    line-height: 30px;
+    background:lightgrey;
+}
+.form-group div .img_preview[item_type='1'] {
+    background-size: 100% 250%!important;
+    border-radius: 5px;
+}
+.form-group div .img_preview[item_type='4'] {
+    background-size: 100% 100%!important;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    height:85px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+div.fileinput-new[item_name='nameview1'],
+div.fileinput-new[item_name='nameview2'],
+div.fileinput-new[item_name='nameview3'],
+div.fileinput-new[item_name='nameview4'],
+div.fileinput-new[item_name='nameview5']{
+    display: inline-block;
+    width: 60%;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.modal-header .modal-title{
+    text-align: center;
+}
+.modal-sub-title{
+    text-align: left;
+    border-bottom:1px solid #f0f0f0;
+    padding-bottom:3px;
+}

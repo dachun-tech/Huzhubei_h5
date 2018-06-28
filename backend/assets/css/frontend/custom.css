@@ -1,0 +1,360 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow:hidden;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+}
+
+div {
+    padding: 0;
+    margin: 0;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+a, img, div, span {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.bg {
+    background-size: 100% 100% !important;
+    z-index: 0;
+    position: absolute !important;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.top-bar {
+    position: relative;
+    height: calc(11vh);
+    background: transparent;
+}
+
+.top-logo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2%;
+    width: 13.5%;
+    height: 85%;
+}
+
+.profile-home,
+.profile-main,
+#sh_register_btn,
+#sh_exit_btn,
+#sh_return_btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: calc(1.7vw);
+    width: calc(4.3vw);
+    height: calc(2.5vw);
+    background-size: 100% 100% !important;
+}
+
+#sh_return_btn {
+    width: calc(3.9vw);
+}
+
+.profile-home {
+    right: calc(7vw);
+    width: calc(3vw);
+    background: url(../../images/frontend/profile/profile_icon.png);
+}
+
+.profile-main {
+    right: calc(11.5vw);
+    width: calc(3vw);
+    background: url(../../images/frontend/profile/profile_icon.png);
+}
+
+#sh_non_register_btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: calc(1.7vw);
+    width: calc(4.3vw);
+    height: calc(2.3vw);
+    background-size: 100% 100%;
+}
+#tool_arrow{
+    position: absolute;
+    top: auto;
+    left: 50%;
+    transform:translateX(-50%);
+    bottom: 3px;
+    width: calc(3vw);
+    height: calc(4vh);
+    background:url(../../images/taiyang/home/nav_bottom.png);
+    background-size:100% 100%;
+    z-index: 1000;
+}
+#tools_bottom {
+    position: absolute;
+    top: auto;
+    left: calc(26.5vw);
+    bottom: 3px;
+    width: calc(47vw);
+    height: calc(12vh);
+    z-index: 1000;
+    display:none;
+    transition:none;
+}
+
+#tools_bottom .toolset {
+    position: relative;
+    float: left;
+    width: 25%;
+    height: 100%;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 68% 100% !important;
+    cursor: pointer;
+}
+
+/********code by PMS ***********/
+.student_tools .toolset {
+    margin-left: 6%;
+}
+
+#toolset_1 {
+    position: absolute;
+    display: none;
+    top: auto;
+    padding: calc(1vh) calc(1vw);
+    left: calc(18.5vw);
+    bottom: calc(12.5vh);
+    width: calc(47vw);
+    height: calc(15vh);
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-size: 96% 100% !important;
+    z-index: 1000;
+}
+
+#toolset_1 .toolset {
+    position: relative;
+    float: left;
+    margin: 0 2%;
+    width: 12%;
+    height: 80%;
+    color: saddlebrown;
+    border-radius: 5px;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: auto 78% !important;
+    cursor: pointer;
+}
+
+canvas {
+    border: 2px solid white !important;
+    border-radius: calc(1vw);
+    position: absolute;
+    left: 12%;
+    top: 2%;
+    width: 76% !important;
+    height: 83% !important;
+    z-index: 5;
+}
+
+#main-toolset-function {
+    background: transparent;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 100;
+    opacity: 1;
+}
+
+.btn_close {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 97.5%;
+    top: 5%;
+    width: calc(1.8vw);
+    height: calc(1.8vw);
+    background: url(../../images/taiyang/home/close.png);
+    background-size: 100% 100% !important;
+    transition: all .3s ease-in-out;
+    z-index: 10;
+}
+
+.btn_close:hover {
+    background: url(../../images/taiyang/home/close_hover.png);
+}
+
+#main-toolset-function .photo-panel,
+#main-toolset-function .paint-panel {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 40%;
+    width: 65%;
+    height: 65%;
+    border-radius: 2%;
+    background: url(../../js/toolset/images/makehead/bg.png);
+    background-size: 100% 100% !important;
+}
+
+.paint-panel iframe {
+    position: absolute;
+    width: 94%;
+    height: 94%;
+    top: 4%;
+    left: 2%;
+    border: none;
+}
+
+#main-toolset-function .photo-panel {
+    width: 58%;
+    background: url(../../images/taiyang/toolset/photo/bg.png);
+}
+
+#main-toolset-function .pen-panel {
+    width: 100%;
+    top: 0;
+    height: 100%;
+    left: 0;
+}
+
+.pen-panel canvas {
+    cursor: url(../../js/toolset/images/makehead/pencil-light-cursor.cur), auto;
+}
+
+.pen-panel .btn_close {
+    left: 96.4%;
+    top: 5.2%;
+    width: calc(3vw);
+    height: calc(3vw);
+}
+
+#pen_canvas {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+    left: 0 !important;
+    top: 0 !important;
+    border: none !important;
+
+}
+
+.photo-panel .camera-control {
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 98%;
+}
+
+.camera-control .camera-select {
+    position: absolute;
+    width: 40%;
+    height: 7%;
+    border-radius: calc(1vh);
+    top: 92%;
+    left: 87%;
+    font-size: calc(2vh);
+    transform: translate(-50%, -50%);
+}
+
+.camera-control #camera-view,
+.camera-control #scanned-img {
+    position: absolute;
+    padding: calc(2vh);
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: calc(.5vw);
+    height: 83%;
+    width: 76%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    z-index: 1000;
+}
+
+.photo-panel .btn-shot {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    width: 8%;
+    height: 12%;
+    transform: translate(-50%, -50%);
+    background-size: 100% 100% !important;
+    border: none;
+    transition: all .3s ease-in-out;
+    background: url(../../images/taiyang/toolset/photo/shot.png);
+}
+
+.photo-panel .btn-shot:hover {
+    background: url(../../images/taiyang/toolset/photo/shot_hover.png);
+}
+
+#main-toolset-function .dice-panel,
+#main-toolset-function .audio-panel {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 40%;
+    height: 40%;
+    border-radius: 2%;
+    background: url(../../js/toolset/images/makehead/bg.png);
+    background-size: 100% 100% !important;
+    border: none;
+}
+
+.dice-panel img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    height: 60%;
+}
+
+.dice-panel .btn_close,
+.audio-panel .btn_close {
+    left: 95%;
+    top: 7%;
+}
+
+.audio-panel img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 42%;
+    height: 50%;
+    cursor: pointer;
+}
+
+.btn_audio_download,
+.btn_audio_play {
+    position: absolute;
+    left: 35%;
+    top: 70%;
+    height: 15%;
+    width: 10%;
+    background: url(../../images/taiyang/toolset/audio/audio_play.png) no-repeat;
+    background-size: 100% 100% !important;
+    cursor: pointer;
+}
+
+.btn_audio_download {
+    left: 55%;
+    background: url(../../images/taiyang/toolset/audio/audio_download.png) no-repeat;
+}
+
